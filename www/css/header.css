@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav-item {
+    margin-right: 30px;
+}
+.header__nav-item:hover{
+    text-decoration: underline;
+    transition: 3s;
+}
+
+.header__logo_title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.header__logo{
+    width: 35px;
+    height: 36.232px;
+}
+
+.header__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+}
+.header__menu{
+    display: none;
+}
+
+.header__sign {
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.header__sign-up{
+    border-radius: 100px;
+    border: 1px solid #F53855;
+    width: 150px;
+    height: 45px;
+    background: #FFF;
+    color: #F53855;
+    font-weight: 500;
+    margin-left: 30px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+.header__sign-up:hover{
+    background-color: #F53855;
+    border: none;
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 10;
+        background-color: white;
+        max-width: 90%;
+    }
+    .header__menu{
+        display: block;
+    }   
+
+    .header__sign{
+        display: none;
+    }
+
+    .header__nav{
+        background: red;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top right);
+        transition: clip-path 0.9s ease-in;
+        max-width: 100%;
+    }
+    .header__nav.open{
+        clip-path: circle(1000px at top);
+    }
+    .header__nav ul{
+        flex-direction:column;
+        height: 100%;
+    }
+    .header__nav .header__nav-item{
+        margin-right: 0;
+        padding-top: 5px;
+        margin-bottom: 150px;
+    }
+    .header__nav a{
+        font-weight: 500;
+        display: block;
+        font-size: 32px;
+    }
+}

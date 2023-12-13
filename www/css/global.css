@@ -1,0 +1,64 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color:#0B132A;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 0 auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #4F5665;
+}
+
+li{
+    display: block;
+}
+
+.default-button{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #F53838;
+    color: #FFF;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.default-shadow{
+    margin-left: 20px;
+    width: 211px;
+    height: 25px;
+    border-radius: 10px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(15px);
+}
+
+.default-button:hover{
+    background: rgba(245, 56, 56, 0.35);
+    border: 2px solid #F53838;
+    color: #FFF;
+}
+
+.default-shadow{
+    position: relative;
+    bottom: 10px;
+    transition: 2s;
+}
+
+
+
