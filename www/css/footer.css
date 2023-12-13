@@ -1,0 +1,52 @@
+.foot{
+    background: #F6F5F5;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F6F5F5;
+    padding-top: 180px;
+}
+
+.nametag {
+    color: #AFB5C0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.media{
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.name__vpn {
+    color: #0B132A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .foot{
+        background: #F6F5F5;
+    }
+    .footer {
+        width: 140%;
+        flex-direction: column;
+    }
+    .nametag{
+        margin-bottom: 25px;
+    }
+}
