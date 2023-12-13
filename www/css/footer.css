@@ -1,0 +1,41 @@
+.foot{
+    background: #F6F5F5;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F6F5F5;
+    width: 1110px;
+    margin:0  auto;
+    padding-top: 180px;
+}
+
+.nametag {
+    color: #AFB5C0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+
+.media{
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.name__vpn {
+    color: #0B132A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
