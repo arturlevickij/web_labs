@@ -1,0 +1,64 @@
+.container-list{
+    
+    background: url(../images/work.svg) no-repeat left top ;
+
+}
+.list__iner {
+    width: 450px;
+    margin-left: 700px;
+    padding-bottom: 220px;
+}
+
+.list__title {
+    width: 383.406px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.list__paragraph {
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.done1 {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.list__l1 {
+    align-items: center;
+    display: flex;
+}
+
+.l1 {
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.l2 {
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.l3 {
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.l4 {
+    color: #4F5665;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
