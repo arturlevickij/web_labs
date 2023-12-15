@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Manager</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+</head>
+
+  <body class="body">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-center">My Stones</h1>
+      </div>
+      <div class="row">
+        <div class="header">
+          <form id="add_form" class="header_body">
+            <h3 class="text_card">Create stone</h3>
+            <div class="stone_name">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name_input" />
+            </div>
+            <div class="stone_name">
+              <label for="exampleInputPassword1" class="form-label">Carat</label>
+              <input type="number" class="form-control" id="carat_input" oninput="this.value = this.value.replace(/^[-+]/, '')"/>
+            </div>
+            <div class="stone_name">
+                <label for="exampleInputType1" class="form-label">Color</label>
+                <input type="text" class="form-control" id="color_input" />
+              </div>
+              <div class="stone_name">
+                <label for="exampleInputType1" class="form-label">Clarity</label>
+                <input type="number" class="form-control" id="clarity_input" oninput="this.value = this.value.replace(/^[-+]/, '')"/>
+              </div>
+              <div class="stone_name">
+                <label for="exampleInputType1" class="form-label">Price per carat</label>
+                <input type="number" class="form-control" id="price_input" oninput="this.value = this.value.replace(/^[-+]/, '')"/>
+              </div>
+            <button id="submit_button" type="submit" class="sub_button">
+              Submit
+            </button>
+          </form>
+          <div id="list">
+            <h2 class="name">Stone List</h2>
+            <div id="stoneList"></div>
+          </div>
+
+          <div class="right_side">
+            <div class="find_container">
+              <h4 class="find_card">Find stones</h4>
+              <input id="find_input" type="text" class="form-control" />
+              <div class="buttons_con">
+                  <button id="find_button" type="button" class="find_but" onclick="findCamera()">
+                  Find
+                  </button>
+                  <button id="cancel_find_button" type="button" class="cancel_but" onclick="cancelSearch()">
+                  Cancel
+                  </button>
+              </div>
+            </div>
+            <div class="sort_container">
+              <p class="txt"><strong> Sort list </strong></p>
+              <button id="sort_button" type="button" class="sort_button">
+                Sort
+              </button>
+            </div>
+    
+            <div class="count_container">
+              <p class="txt"> <strong>Count price </strong></p>
+              <button id="count_button" type="button" class="count_button"
+                  onclick="calculateTotalPrice(stoneCollection.getStones())">Count</button>
+                  <p id="totalPrice">Total Price per carat: $0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/api.js"></script>
+  </body>
+</html>
